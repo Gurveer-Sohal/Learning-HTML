@@ -15,65 +15,105 @@
 
     <!--body tag is what is viewed-->
     <body>
-        <h1>Hello Gurveer</h1> <!-- one per page-->
+        <header>
+            <h1>Hello Gurveer</h1> <!-- one per page-->
         
-        <hr>
-        
-        <h2>We are beginning our journey of learning HTML5!</h2>
-        <img src="img/174854.png" alt="HTML5 Logo" width="200" height="200">
-        <figure>
-            <figcaption>This is exmaple HTML code</figcaption>
-            <code>&lt;h1&gt; Hello World &lt;/h1&gt;</code>
-        </figure>
-        <p>This is my first web page.</p> 
-        <img src="img/Mustang.jpg" alt="Mustang Wallpaper!" title="I love Mustangs" width="300" height="200">
-        
-        <h3>My daily schedule:</h3>
-        <p>On my first day I learned:
-            <br>&nbsp;&nbsp;&nbsp;... Tags, body and head.
-            <br>&nbsp;&nbsp;&nbsp;.... Using resource <abbr title="Mozilla Developer Network">
-               <a href="https://developer.mozilla.org/"> MDN</a>
-            </abbr>.
-        </p> 
-        
+            <nav aria-label="Primary Navigatoin">
+                <ul>
+                    <li>
+                        <a href="#html">Learning HTML</a>
+                    </li>
+                    <li>
+                        <a href="#vacation">Learn about my vacation</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <hr>
 
-        <h2>I AM also planning a vaction</h2>
-        <p>I've been working hard and <em> really need to chill somewhere.</em></p> 
-        <p>I want to visit Miami.</p> 
-        
-        <h3>Places I want to visit</h3>
-        <p>Miami</p> 
-        <figure>
-            <img src="img/thumb-1920-468203.jpg" alt="Miami scene" title="Miami" width="400" height="250" loading="lazy">
-            <figcaption>Here is a picture of Miami</figcaption>
-        </figure>
-        
-        <h3>Places I want to avoid</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold!</strong></dd>
-            <dt>South Pole</dt>
-            <dd>This is also cold</dd>
-            <dt>Mountain Tops</dt>
-            <dd>These are extremly cold</dd>
-        </dl>
+        <main>
+       
+        <article id = "html">
+            <h2>We are beginning our journey of learning HTML5!</h2>
+            <section>
+                <h3>HTML 5</h3>
+                <img src="img/174854.png" alt="HTML5 Logo" width="200" height="200">
+                <figure>
+                    <figcaption>This is exmaple HTML code</figcaption>
+                    <code>&lt;h1&gt; Hello World &lt;/h1&gt;</code>
+                </figure>
+            </section>
+            
+            <p>This is my first web page.</p> 
+            <img src="img/Mustang.jpg" alt="Mustang Wallpaper!" title="I love Mustangs" width="300" height="200">
+            
+            <section>
+                <h3>My daily schedule:</h3>
+                <p>On my first day I learned:
+                    <br>&nbsp;&nbsp;&nbsp;... Tags, body and head.
+                    <br>&nbsp;&nbsp;&nbsp;.... Using resource <abbr title="Mozilla Developer Network">
+                       <a href="https://developer.mozilla.org/"> MDN</a>
+                    </abbr>.
+                </p> 
+                <aside>
+                    <details>
+                        <summary>
+                            Guess the <mark> number of hours </mark>I spent at University
+                        </summary>
+                        <p>I go to University at <time datetime="PT3H">8 am</time> and come back at 5pm</p>
+                    </details>
+                </aside>
+            </section>         
+            <hr>
+        </article>
+        <article id = "vacation">
+            <h2>I AM also planning a vaction</h2>
+            <p>I've been working hard and <em> really need to chill somewhere.</em></p> 
+            <p>I want to visit Miami.</p> 
+            
+            <section>
+                <h3>Places I want to visit</h3>
+                <p>Miami</p> 
+                <figure>
+                    <img src="img/thumb-1920-468203.jpg" alt="Miami scene" title="Miami" width="400" height="250" loading="lazy">
+                    <figcaption>Here is a picture of Miami</figcaption>
+                </figure>    
+            </section>
 
+            <section>
+                <h3>Places I want to avoid</h3>
+                <dl>
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold!</strong></dd>
+                    <dt>South Pole</dt>
+                    <dd>This is also cold</dd>
+                    <dt>Mountain Tops</dt>
+                    <dd>These are extremly cold</dd>
+                </dl>
+        
+                <hr>
+        
+                <h3>Practicing lists in HTML</h3>
+                <p>There are many types of lists such as:</p>
+                <ol>
+                    <li>ordered Lists</li>
+                    <li>unordered lists</li>
+                </ol>
+                <p>Below is an example of unordered lists</p>
+                <ul>
+                    This is my first point.
+                </ul>
+                <ul>This is my second point.</ul>
+                
+            </section>
+
+        </article>
+        </main>
         <hr>
-
-        <h3>Practicing lists in HTML</h3>
-        <p>There are many types of lists such as:</p>
-        <ol>
-            <li>ordered Lists</li>
-            <li>unordered lists</li>
-        </ol>
-        <p>Below is an example of unordered lists</p>
-        <ul>
-            This is my first point.
-        </ul>
-        <ul>This is my second point.</ul>
-
-        &lt;&lt;&lt; &copy; <a href="about.html">Gurveer Sohal</a>  &gt;&gt;&gt;
+        <footer>
+            <p>&lt;&lt;&lt; &copy; <a href="about.html">Gurveer Sohal</a>  &gt;&gt;&gt;</p>
+        </footer>
+       
 
     </body>
 </html>
